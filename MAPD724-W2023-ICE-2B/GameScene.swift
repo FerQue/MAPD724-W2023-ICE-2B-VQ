@@ -7,7 +7,7 @@ var screenHeight: CGFloat?
 
 class GameScene: SKScene
 {
-    // instance variables
+    // variables
     var ocean1: Ocean?
     var ocean2: Ocean?
     var player: Player?
@@ -23,25 +23,25 @@ class GameScene: SKScene
         
         name = "GAME"
         
-        // add the first ocean to the Scene
+        //first ocean to the Scene
         ocean1 = Ocean()
         ocean1?.Reset()
         addChild(ocean1!)
         
-        // add the second ocean to the scene
+        //second ocean to the scene
         ocean2 = Ocean()
         ocean2?.position.y = -627
         addChild(ocean2!)
         
-        // add the player to the Scene
+        //player to the Scene
         player = Player()
         addChild(player!)
         
-        // add the island to the Scene
+        //island to the Scene
         island = Island()
         addChild(island!)
         
-        // add 3 clouds to the Scene
+        //3 clouds to the Scene
         for _ in 0...2
         {
             let cloud = Cloud()
